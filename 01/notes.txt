@@ -1,0 +1,3 @@
+Sockets send bytes, not strings, so encode() and decode() are required.
+Server order: bind → listen → accept → recv/send → close
+Client order: connect → send/recv → close
